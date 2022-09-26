@@ -377,7 +377,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Owner", url="t.me/xdazher"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Home", callback_data="emiko_back"),
+                    InlineKeyboardButton(text="Go Home", callback_data="source_back"),
                  ]
                 ]
             ),
@@ -397,7 +397,7 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_bac")]]
+                [[InlineKeyboardButton(text="Go Back", callback_data="source_back")]]
             ),
         )
 
@@ -424,7 +424,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Support Updates", url="https://t.me/about_db"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="emiko_back"),
+                    InlineKeyboardButton(text="Go Back", callback_data="source_back"),
                  
                  ]
                 ]
@@ -458,7 +458,7 @@ def Source_about_callback(update, context):
                      InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdbmusicbot"),
                  ],
                  [
-                      InlineKeyboardButton(text="⬅ Go Home", callback_data="emiko_back"),
+                      InlineKeyboardButton(text="⬅ Go Home", callback_data="source_back"),
                  
                  ]
                 ]
