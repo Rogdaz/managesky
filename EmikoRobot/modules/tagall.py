@@ -51,7 +51,7 @@ async def mentionall(event):
             return await event.respond(
                 "__I can't mention members for older messages! (messages which are sent before I'm added to group)__")
     else:
-        return await event.reply("__Reply to a message or give me some text to mention others!__")
+        return await event.reply("__Gunakan /all (pesan) atau @all (replay pesan) untuk memanggil orang lain!__")
 
     spam_chats.append(chat_id)
     usrnum = 0
@@ -113,10 +113,10 @@ __mod_name__ = "Tag all"
 __help__ = """
 ──「 Mention all func 」──
 
-Emiko Can Be a Mention Bot for your group.
+Stream Can Be a Mention Bot for your group.
 
 Only admins can tag all.  here is a list of commands
 
-❂ /tagall or @all (reply to message or add another message) To mention all members in your group, without exception.
+❂ /all or @all (reply to message or add another message) To mention all members in your group, without exception.
 ❂ /cancel for canceling the mention-all.
 """
