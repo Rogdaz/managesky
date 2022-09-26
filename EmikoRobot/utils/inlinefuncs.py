@@ -87,63 +87,6 @@ async def paste(content):
     link = await _netcat("ezup.dev", 9999, content)
     return link
 
-async def inline_help_func(__HELP__):
-    buttons = InlineKeyboard(row_width=4)
-    buttons.add(
-        *[
-            (InlineKeyboardButton(text=i, switch_inline_query_current_chat=i))
-            for i in keywords_list
-        ]
-    )
-    answerss = [
-        InlineQueryResultArticle(
-            title="Inline Commands",
-            description="Help Related To Inline Usage.",
-            input_message_content=InputTextMessageContent(
-                "**__Click A Button To Get Started.__**"
-            ),
-            thumb_url="https://telegra.ph/file/1b8f08dba704a5eb2bb09.jpg",
-            reply_markup=buttons,
-        ),
-    ]
-    answerss = await alive_function(answerss)
-    return answerss
-
-
-async def alive_function(answers):
-    buttons = InlineKeyboard(row_width=2)
-    bot_state = "Dead" if not await app.get_me() else "Alive"
-    ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
-    buttons.add(
-        InlineKeyboardButton("Main bot", url="https://t.me/EmiexRobot"),
-        InlineKeyboardButton(
-            "Go Inline!", switch_inline_query_current_chat=""
-        ),
-    )
-
-    msg = f"""
-**[Emiko Robot ❤️](https://t.me/emikosupport):**
-**MainBot:** `{bot_state}`
-**UserBot:** `{ubot_state}`
-**Python:** `{pyver.split()[0]}`
-**Pyrogram:** `{pyrover}`
-**MongoDB:** `{mongover}`
-**Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/excrybaby)
-"""
-    answers.append(
-        InlineQueryResultArticle(
-            title="Alive",
-            description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/1b8f08dba704a5eb2bb09.jpg",
-            input_message_content=InputTextMessageContent(
-                msg, disable_web_page_preview=True
-            ),
-            reply_markup=buttons,
-        )
-    )
-    return answers
-
 
 async def translate_func(answers, lang, tex):
     result = await arq.translate(tex, lang)
