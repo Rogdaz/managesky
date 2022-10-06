@@ -239,7 +239,7 @@ def stop_filter(update, context):
             chat_name = chat.title
 
     if len(args) < 2:
-        send_message(update.effective_message, "What should i stop?")
+        send_message(update.effective_message, "")
         return
 
     chat_filters = sql.get_chat_triggers(chat_id)
