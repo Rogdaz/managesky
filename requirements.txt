@@ -26,6 +26,7 @@ Pillow
 CurrencyConverter
 googletrans
 google-trans-new
+gpytranslate
 jikanpy
 speedtest-cli
 regex
