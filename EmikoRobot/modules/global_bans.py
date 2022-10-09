@@ -413,44 +413,6 @@ def gbanlist(update: Update, context: CallbackContext):
         )
 
 
-def check_and_ban(update, user_id, should_message=True):
-
-    if user_id in TIGERS or user_id in WOLVES:
-        sw_ban = None
-    else:
-        try:
-            sw_ban = sw.get_ban(int(user_id))
-        except:
-            sw_ban = None
-
-    if sw_ban:
-        update.effective_chat.ban_member(user_id)
-        if should_message:
-            update.effective_message.reply_text(
-                f"<b>Alert</b>: this user is globally banned.\n"
-                f"<code>*bans them from here*</code>.\n"
-                f"<b>Appeal chat</b>: {SPAMWATCH_SUPPORT_CHAT}\n"
-                f"<b>User ID</b>: <code>{sw_ban.id}</code>\n"
-                f"<b>Ban Reason</b>: <code>{html.escape(sw_ban.reason)}</code>",
-                parse_mode=ParseMode.HTML,
-            )
-        return
-
-    if sql.is_user_gbanned(user_id):
-        update.effective_chat.ban_member(user_id)
-        if should_message:
-            text = (
-                f"<b>Alert</b>: this user is globally banned.\n"
-                f"<code>*bans them from here*</code>.\n"
-                f"<b>Appeal chat</b>: @{SUPPORT_CHAT}\n"
-                f"<b>User ID</b>: <code>{user_id}</code>"
-            )
-            user = sql.get_gbanned_user(user_id)
-            if user.reason:
-                text += f"\n<b>Ban Reason:</b> <code>{html.escape(user.reason)}</code>"
-            update.effective_message.reply_text(text, parse_mode=ParseMode.HTML)
-
-
 def enforce_gban(update: Update, context: CallbackContext):
     # Not using @restrict handler to avoid spamming - just ignore if cant gban.
     bot = context.bot
@@ -539,13 +501,13 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = f"""
 *Admins only:*
-❂ /antispam <on/off/yes/no>: Will toggle our antispam tech or return your current settings.
+❂ antispam <on/off/yes/no>: Will toggle our antispam tech or return your current settings.
 Anti-Spam, used by bot devs to ban spammers across all groups. This helps protect \
 you and your groups by removing spam flooders as quickly as possible.
 Note: Users can appeal gbans or report spammers at @{SUPPORT_CHAT}
-❂ /flood: Get the current antiflood settings
-❂ /setflood <number/off/no>: Set the number of messages after which to take action on a user. Set to '0', 'off', or 'no' to disable.
-❂ /setfloodmode <action type>: Choose which action to take on a user who has been flooding. Options: ban/kick/mute/tban/tmute.
+❂ flood: Get the current antiflood settings
+❂ setflood <number/off/no>: Set the number of messages after which to take action on a user. Set to '0', 'off', or 'no' to disable.
+❂ setfloodmode <action type>: Choose which action to take on a user who has been flooding. Options: ban/kick/mute/tban/tmute.
 """
 
 GBAN_HANDLER = CommandHandler("gban", gban, run_async=True)
