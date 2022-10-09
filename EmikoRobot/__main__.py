@@ -364,15 +364,15 @@ def emiko_about_callback(update, context):
     if query.data == "emiko_":
         query.message.edit_text(
             text=f"๏›› Saya *{dispatcher.bot.first_name}*, \nbot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup and."
-            "\n\n• Saya dapat menyapa pengguna dengan pesan selamat datang dan menetapkan aturan grup dengan mudah."
-            "\n• Saya memiliki sistem anti-spam yang canggih dan juga tidak ribet saat pengoprasian fitur ini."
-            "\n• Saya dapat memperingati pengguna dengan setiap tindakan yang telah ditentukan seperti bisu, dll."
-            "\n• Saya memiliki sistem pencatatan, blacklist, dan bahkan balasan yang telah ditentukan sebelumnya."
+            "\n\n➲ Saya dapat menyapa pengguna dengan pesan selamat datang dan menetapkan aturan grup dengan mudah."
+            "\n➲ Saya memiliki sistem anti-spam yang canggih dan juga tidak ribet saat pengoprasian fitur ini."
+            "\n➲ Saya dapat memperingati pengguna dengan setiap tindakan yang telah ditentukan seperti bisu, dll."
+            "\n➲ Saya memiliki sistem pencatatan, blacklist, dan bahkan balasan yang telah ditentukan sebelumnya."
             "\n\n────────────────────"
             f"\n➻  *Uᴘᴛɪᴍᴇ:* {}"
             f"\n➻ {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*"
             "\n────────────────────"
-            f"\n\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0_",
+            f"\n\n➻ {dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
