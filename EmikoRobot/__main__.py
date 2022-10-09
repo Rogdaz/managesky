@@ -372,7 +372,8 @@ def emiko_about_callback(update, context):
             f"\n➻  *Uᴘᴛɪᴍᴇ:* {}"
             f"\n➻ {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*"
             "\n────────────────────"
-            f"\n\n➻ {dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0",
+            f"\n\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0_"
+            f"\n\n Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
