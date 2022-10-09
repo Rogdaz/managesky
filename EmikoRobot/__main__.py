@@ -118,8 +118,8 @@ HELP_STRINGS = f"""
 ➲ /start : Start bot dan bot siap di jalankan.
 ➲ /donate : Support saya agar lebih bersamangat.
 ➲ /help  : Untuk melihat Informasi bot .
-  ‣ In PM : Saya akan mengirimkan bantuan Anda untuk semua Modules.
-  ‣ In GROUP : Saya akan mengarahkan Anda ke Pm untuk Modules."""
+  ‣ In PM : Akan mengirimkan bantuan Anda untuk Info lanjut.
+  ‣ In GROUP : Akan mengarahkan Anda ke Pm untuk Modules."""
 
 
 DONATE_STRING = """Ehhh.. {} !!
