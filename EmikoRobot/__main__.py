@@ -370,8 +370,7 @@ def emiko_about_callback(update, context):
             "\n➲ Saya memiliki sistem anti-spam yang canggih dan juga tidak ribet saat pengoprasian fitur ini."
             "\n➲ Saya dapat memperingati pengguna dengan setiap tindakan yang telah ditentukan seperti bisu, dll."
             "\n➲ Saya memiliki sistem pencatatan, blacklist, dan bahkan balasan yang telah ditentukan sebelumnya."
-            f"\n\n_{dispatcher.bot.first_name}`licensed under the GNU General Public License v3.0_"
-            f"\n Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
+            f"\n\n Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
