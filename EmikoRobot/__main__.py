@@ -97,16 +97,17 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text=f"📣 About {dispatcher.bot.first_name}", callback_data="emiko_"),
-    ],
-    [
-        InlineKeyboardButton(text="💬 Fitur Admin", callback_data="emiko_admin"),
         InlineKeyboardButton(
-            text="🎵 Music Bot", callback_data="source_"
-        ),
+            text="✚ Add Bot ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="❓ Help & Command", callback_data="help_back"),
+        InlineKeyboardButton(
+            text="🎵 Cmd Musik 🎵", callback_data="source_"),
+        InlineKeyboardButton(text="🧑‍💻 Owner 🧑‍💻", url="t.me/xdazher"),
+    ],
+    [
+        InlineKeyboardButton(text="🕹️ Cmd Help 🕹️", callback_data="help_back"),
+        InlineKeyboardButton(text=f"✨ About ✨", callback_data="emiko_"),
 
     ],
 ]
@@ -116,10 +117,9 @@ HELP_STRINGS = """
 Jadikan & berikan saya ijin 𝗔𝗗𝗠𝗜𝗡 terlebih dahulu agar bisa anda gunakan, Kemudian klick command di bawah & harap 𝗕𝗔𝗖𝗔 𝗗𝗨𝗟𝗨 𝗞𝗘𝗧𝗘𝗥𝗔𝗡𝗚𝗔𝗡𝗡𝗬𝗔 sebelum menggunakannya."""
 
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @xdazher \
- Supporting isnt always financial! \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """Hallo Bro !!
+Anda dapat mendukung proyek/Robot ini dengan menghubungi [DEVELOPER](https://t.me/xdazher) \
+Mereka yang tidak dapat memberikan dukungan keuangan Atau donasi dipersilakan untuk membantu kami mengembangkan bot ini."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -453,8 +453,6 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(
-                           text="✚ Add Bot", url=f"https://t.me/{bu}?startgroup=new"),
                      InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdbmusicbot"),
                  ],
                  [
