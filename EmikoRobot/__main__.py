@@ -87,10 +87,8 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 *👋 Hello {} !* 
 ◕ *Saya adalah bot manajemen Grup Modular dengan beberapa tambahan Fitur! Lihatlah Berikut ini Hal-hal yang Bisa saya Bantu untuk mengelola group anda.*
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-× *Uᴘᴛɪᴍᴇ:* `{}` 
-× `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+──────────────────────────────────────────
 ◕ *klik help & cmd untuk melihat commands.*
 ◕ *Pᴏᴡᴇʀᴇᴅ* [☕](https://telegra.ph/file/1afa11b71228ef67aefc5.jpg) *Bʏ: @about_db!*
 """
@@ -98,28 +96,33 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="✚ Add Bot ✚", url=f"https://t.me/{bu}?startgroup=new"),
+            text="✚ Add Bot To Your Group ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="🧑‍💻 Owner 🧑‍💻", url="t.me/xdazher"),
-        InlineKeyboardButton(text=f"✨ About ✨", callback_data="emiko_"),
+        InlineKeyboardButton(text="👨‍💻 Owner Bot 👨‍💻", url="t.me/xdazher"),
+        InlineKeyboardButton(text=f"📥 About Info 📥", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="🕹️ Cmd Help 🕹️", callback_data="help_back"),
+        InlineKeyboardButton(text="⚙️ Cmd Help ⚙️", callback_data="help_back"),
         InlineKeyboardButton(
-            text="🎵 Cmd Musik 🎵", callback_data="source_"),
+            text="💿 Cmd Musik 💿", callback_data="source_"),
 
     ],
 ]
 
 
-HELP_STRINGS = """
-Jadikan & berikan saya ijin 𝗔𝗗𝗠𝗜𝗡 terlebih dahulu agar bisa anda gunakan, Kemudian klick command di bawah & harap 𝗕𝗔𝗖𝗔 𝗗𝗨𝗟𝗨 𝗞𝗘𝗧𝗘𝗥𝗔𝗡𝗚𝗔𝗡𝗡𝗬𝗔 sebelum menggunakannya."""
+HELP_STRINGS = f"""
+*» {dispatcher.bot.first_name} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
+➲ /start : Start bot dan bot siap di jalankan.
+➲ /donate : Support saya agar lebih bersamangat.
+➲ /help  : Untuk melihat Informasi bot .
+  ‣ In PM : Saya akan mengirimkan bantuan Anda untuk semua Modules.
+  ‣ In GROUP : Saya akan mengarahkan Anda ke Pm untuk Modules."""
 
 
-DONATE_STRING = """Hallo Bro !!
+DONATE_STRING = """Ehhh.. {} !!
 Anda dapat mendukung proyek/Robot ini dengan menghubungi [DEVELOPER](https://t.me/xdazher) \
-Mereka yang tidak dapat memberikan dukungan keuangan Atau donasi dipersilakan untuk membantu kami mengembangkan bot ini."""
+Mereka yang tidak dapat memberikan dukungan dan Bantuan, dipersilakan untuk membantu kami mengembangkan bot ini dengan cara Berdoanasi Seikhlasnya."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -360,21 +363,23 @@ def emiko_about_callback(update, context):
     query = update.callback_query
     if query.data == "emiko_":
         query.message.edit_text(
-            text=f"๏›› Saya *{dispatcher.bot.first_name}*, \nbot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup dengan mudah."
-            "\n\n• Saya dapat membatasi pengguna."
-            "\n• Saya dapat menyapa pengguna dengan pesan selamat datang yang dapat disesuaikan dan bahkan menetapkan aturan grup."
-            "\n• Saya memiliki sistem anti-spam yang canggih."
-            "\n• Saya dapat memperingatkan pengguna hingga mereka mencapai peringatan maksimal, dengan setiap tindakan yang telah ditentukan sebelumnya seperti larangan, bisu, tendangan, dll."
-            "\n• Saya memiliki sistem pencatatan, daftar hitam, dan bahkan balasan yang telah ditentukan sebelumnya untuk kata kunci tertentu."
-            "\n• *Berikan Saya izin admin sebelum menjalankan perintah apa pun dan hal lainnya*"
-            f"\n\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0_ Click button to get basic help for {dispatcher.bot.first_name}.",
+            text=f"๏›› Saya *{dispatcher.bot.first_name}*, \nbot manajemen grup yang kuat yang dibuat untuk membantu Anda mengelola grup and."
+            "\n\n• Saya dapat menyapa pengguna dengan pesan selamat datang dan menetapkan aturan grup dengan mudah."
+            "\n• Saya memiliki sistem anti-spam yang canggih dan juga tidak ribet saat pengoprasian fitur ini."
+            "\n• Saya dapat memperingati pengguna dengan setiap tindakan yang telah ditentukan seperti bisu, dll."
+            "\n• Saya memiliki sistem pencatatan, blacklist, dan bahkan balasan yang telah ditentukan sebelumnya."
+            "\n\n────────────────────"
+            f"\n➻  *Uᴘᴛɪᴍᴇ:* {}"
+            f"\n➻ {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*"
+            "\n────────────────────"
+            f"\n\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0_",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
                     InlineKeyboardButton(text="Support", url="t.me/about_db"),
-                    InlineKeyboardButton(text="Owner", url="t.me/xdazher"),
+                    InlineKeyboardButton(text="Owner Bot", url="t.me/xdazher"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Home", callback_data="source_back"),
@@ -454,10 +459,7 @@ def Source_about_callback(update, context):
                 [
                  [
                      InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdbmusicbot"),
-                 ],
-                 [
-                      InlineKeyboardButton(text="⬅ Go Home", callback_data="source_back"),
-                 
+                     InlineKeyboardButton(text="⬅ Go Home", callback_data="source_back"),
                  ]
                 ]
            ),
