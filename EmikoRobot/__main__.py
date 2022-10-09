@@ -119,11 +119,12 @@ HELP_STRINGS = f"""
 ➲ /donate : Support saya agar lebih bersamangat.
 ➲ /help  : Untuk melihat Informasi bot .
   ‣ In PM : Akan mengirimkan bantuan Anda untuk Info lanjut.
-  ‣ In GROUP : Akan mengarahkan Anda ke Pm untuk Modules."""
+  ‣ In GROUP : Akan mengarahkan Anda ke Pm untuk Modules.
+  ‣ Akan Berjalan : Jika Bot sudah menjadi admin & Izin akses. """
 
 
 DONATE_STRING = """Ehhh.. {} !!
-Anda dapat mendukung proyek/Robot ini dengan menghubungi [DEVELOPER](https://t.me/xdazher) \
+Anda dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](https://t.me/xdazher) \
 Mereka yang tidak dapat memberikan dukungan dan Bantuan, dipersilakan untuk membantu kami mengembangkan bot ini dengan cara Berdoanasi Seikhlasnya."""
 
 IMPORTED = {}
