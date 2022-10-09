@@ -19,7 +19,7 @@ class Config(object):
     OPENWEATHERMAP_ID = 22322
     OWNER_USERNAME = "Scotchers"
     BOT_USERNAME = "EmiexRobot"
-    SUPPORT_CHAT = "FumikaSupportGroup"  # Your own group for support, do not add the @
+    SUPPORT_CHAT = "xdgroupbot"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001748076180
     )  # Prints any new group the bot is added to, prints just the name and ID.
