@@ -1,4 +1,3 @@
-python-dotenv
 future
 emoji
 lxml
@@ -6,8 +5,8 @@ wget
 gtts
 beautifulsoup4
 requests
-python-telegram-bot==13.12
-SQLAlchemy==1.4.29
+python-telegram-bot==13.13
+SQLAlchemy==1.4.40
 psycopg2-binary
 feedparser
 faker
@@ -29,11 +28,12 @@ google-trans-new
 gpytranslate
 jikanpy
 speedtest-cli
+coffeehouse
 regex
 bleach
 wikipedia
 markdown2
-telethon==1.24.0
+telethon
 telegraph
 heroku3
 spamwatch
@@ -44,10 +44,10 @@ ujson
 pretty_errors
 pygithub
 TgCrypto
-pyrogram==1.4.16
+pyrogram==2.0.41
 PyDictionary
-yt-dlp
-youtube_search_python
+git+https://github.com/Sorrybabe/downloader
+youtube_search_python==1.4.9
 youtube_search
 lyrics_extractor
 asyncio
@@ -72,7 +72,7 @@ python-arq
 envparse
 #profanity (Credits to Julia)
 better_profanity
-textblob
+textblob 
 nudepy
 nekos.py
 motor
@@ -86,7 +86,3 @@ fuzzysearch
 img2pdf
 multicolorcaptcha
 git+https://github.com/python-telegram-bot/ptbcontrib.git
-hiredis
-pretty_errors
-requests_html
-qrcode
