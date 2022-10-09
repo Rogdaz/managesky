@@ -86,9 +86,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *👋 Hello {} !* 
-◕ *Saya adalah bot manajemen Grup Modular dengan beberapa tambahan Fitur! Lihatlah Berikut ini Hal-hal yang Bisa saya Bantu untuk mengelola group anda.*
-
-──────────────────────────────────────────
+◕ *Saya adalah bot manajemen Grup Modular.*
+────────────────────"
+➻ *Uptime:* `{}`
+➻ {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*"
+────────────────────"
 ◕ *klik help & cmd untuk melihat commands.*
 ◕ *Pᴏᴡᴇʀᴇᴅ* [☕](https://telegra.ph/file/1afa11b71228ef67aefc5.jpg) *Bʏ: @about_db!*
 """
@@ -368,12 +370,8 @@ def emiko_about_callback(update, context):
             "\n➲ Saya memiliki sistem anti-spam yang canggih dan juga tidak ribet saat pengoprasian fitur ini."
             "\n➲ Saya dapat memperingati pengguna dengan setiap tindakan yang telah ditentukan seperti bisu, dll."
             "\n➲ Saya memiliki sistem pencatatan, blacklist, dan bahkan balasan yang telah ditentukan sebelumnya."
-            "\n\n────────────────────"
-            f"\n➻  *Uᴘᴛɪᴍᴇ:* {}"
-            f"\n➻ {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*"
-            "\n────────────────────"
             f"\n\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0_"
-            f"\n\n Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
+            f"\n Click on button bellow to get basic help for {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
