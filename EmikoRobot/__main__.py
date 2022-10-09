@@ -116,16 +116,13 @@ buttons = [
 HELP_STRINGS = f"""
 *» {dispatcher.bot.first_name} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
 ➲ /start : Start bot dan bot siap di jalankan.
-➲ /donate : Support saya agar lebih bersamangat.
-➲ /help  : Untuk melihat Informasi bot .
-  ‣ In PM : Akan mengirimkan bantuan Anda untuk Info lanjut.
-  ‣ In GROUP : Akan mengarahkan Anda ke Pm untuk Modules.
-  ‣ Akan Berjalan : Jika Bot sudah menjadi admin & Izin akses. """
-
+➲ /donate : Support saya agar lebih semangat.
+➲ /help  : Cmd Untuk melihat Informasi bot .
+  ‣ ɪᴛ's ᴡᴏʀᴋ : ᴊɪᴋᴀ ʙᴏᴛ sᴜᴅᴀʜ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ & ᴅᴀᴘᴇᴛ ᴀᴋsᴇs."""
 
 DONATE_STRING = """Ehhh.. {} !!
 Anda dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](https://t.me/xdazher) \
-Mereka yang tidak dapat memberikan dukungan dan Bantuan, dipersilakan untuk membantu kami mengembangkan bot ini dengan cara Berdoanasi Seikhlasnya."""
+Mereka yang tidak dapat memberikan dukungan dan Bantuan, dipersilakan untuk membantu kami mengembangkan bot ini dengan cara Berdonasi Seikhlasnya."""
 
 IMPORTED = {}
 MIGRATEABLE = []
