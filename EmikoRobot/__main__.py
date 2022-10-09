@@ -372,7 +372,7 @@ def emiko_about_callback(update, context):
             "\n➲ Saya dapat memperingati pengguna dengan setiap tindakan yang telah ditentukan seperti bisu, dll."
             "\n➲ Saya memiliki sistem pencatatan, blacklist, dan bahkan balasan yang telah ditentukan sebelumnya."
             f"\n\n Click on button bellow to get basic help for {dispatcher.bot.first_name}."
-            f"\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0_ for Robot management system",
+            f"\n_{dispatcher.bot.first_name}'s licensed under the GNU General Public License v3.0 for Robot management system_",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
