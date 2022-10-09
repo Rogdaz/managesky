@@ -120,8 +120,8 @@ HELP_STRINGS = f"""
 ➲ /help  : Cmd Untuk melihat Informasi bot .
   ‣ ɪᴛ's ᴡᴏʀᴋ : ᴊɪᴋᴀ ʙᴏᴛ sᴜᴅᴀʜ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ & ᴅᴀᴘᴇᴛ ᴀᴋsᴇs."""
 
-DONATE_STRING = """Ehhh.. {} !!
-Anda dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](https://t.me/xdazher) \
+DONATE_STRING = """Info ehhh.. !!
+untuk kamu,kamu dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](https://t.me/xdazher) \
 Mereka yang tidak dapat memberikan dukungan dan Bantuan, dipersilakan untuk membantu kami mengembangkan bot ini dengan cara Berdonasi Seikhlasnya."""
 
 IMPORTED = {}
