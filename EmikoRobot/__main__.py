@@ -101,13 +101,13 @@ buttons = [
             text="✚ Add Bot ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(
-            text="🎵 Cmd Musik 🎵", callback_data="source_"),
         InlineKeyboardButton(text="🧑‍💻 Owner 🧑‍💻", url="t.me/xdazher"),
+        InlineKeyboardButton(text=f"✨ About ✨", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="🕹️ Cmd Help 🕹️", callback_data="help_back"),
-        InlineKeyboardButton(text=f"✨ About ✨", callback_data="emiko_"),
+        InlineKeyboardButton(
+            text="🎵 Cmd Musik 🎵", callback_data="source_"),
 
     ],
 ]
