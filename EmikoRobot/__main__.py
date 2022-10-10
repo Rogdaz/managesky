@@ -375,7 +375,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/about_db"),
+                    InlineKeyboardButton(text="Channels", url="t.me/about_db"),
                     InlineKeyboardButton(text="Owner Bot", url="t.me/xdazher"),
                  ],
                  [
@@ -383,7 +383,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Support Info", callback_data="emiko_support"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Home", callback_data="source_back"),
+                    InlineKeyboardButton(text="◁ Back", callback_data="source_back"),
                  ]
                 ]
             ),
@@ -403,7 +403,7 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="source_back")]]
+                [[InlineKeyboardButton(text="◁ Back", callback_data="emiko_")]]
             ),
         )
 
@@ -415,7 +415,7 @@ def emiko_about_callback(update, context):
              f"\n\nAnda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="emiko_back")]]
+                [[InlineKeyboardButton(text="◁ Back", callback_data="emiko_back")]]
             ),
         )
     elif query.data == "emiko_support":
@@ -430,7 +430,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Support Updates", url="https://t.me/about_db"),
                  ],
                  [
-                    InlineKeyboardButton(text="Go Back", callback_data="source_back"),
+                    InlineKeyboardButton(text="◁ Back", callback_data="emiko_"),
                  
                  ]
                 ]
@@ -460,7 +460,7 @@ def Source_about_callback(update, context):
                 [
                  [
                      InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdbmusicbot"),
-                     InlineKeyboardButton(text="⬅ Go Home", callback_data="source_back"),
+                     InlineKeyboardButton(text="◁ Back", callback_data="source_back"),
                  ]
                 ]
            ),
