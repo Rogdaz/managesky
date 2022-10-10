@@ -379,6 +379,10 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Owner Bot", url="t.me/xdazher"),
                  ],
                  [
+                    InlineKeyboardButton(text="Admin Info", callback_data="source_back"),
+                    InlineKeyboardButton(text="Support Info", callback_data="source_back"),
+                 ],
+                 [
                     InlineKeyboardButton(text="Go Home", callback_data="source_back"),
                  ]
                 ]
@@ -422,7 +426,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                [
                  [
-                    InlineKeyboardButton(text="Support Group", url="t.me/xdgroupbot"),
+                    InlineKeyboardButton(text="Support Group", url=https://t.me/+wmUxlcgtFOljY2I9"),
                     InlineKeyboardButton(text="Support Updates", url="https://t.me/about_db"),
                  ],
                  [
