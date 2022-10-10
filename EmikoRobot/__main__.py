@@ -375,7 +375,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Channels", url="t.me/about_db"),
+                    InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
                     InlineKeyboardButton(text="Owner Bot", url="t.me/xdazher"),
                  ],
                  [
@@ -412,15 +412,15 @@ def emiko_about_callback(update, context):
             text=f"<b>๏›› Setting untuk notes</b>"
              f"\n\n• Anda dapat menyimpan pesan/media/audio atau apa pun sebagai catatan"
              f"\n• Untuk mendapatkan catatan cukup gunakan # di awal kata"
-             f"\n\nAnda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
+             f"\n• Anda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◁ Back", callback_data="emiko_back")]]
+                [[InlineKeyboardButton(text="◁ Back", callback_data="emiko_")]]
             ),
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Emiko support chats*"
+            text="*๏ {dispatcher.bot.first_name} support chats*"
             f"\nJoin My Support Group/Channel for see or report a problem on {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
