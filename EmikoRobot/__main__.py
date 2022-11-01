@@ -396,7 +396,7 @@ def emiko_about_callback(update, context):
              "\n\n*Fitur Admin*"
              "\n• Alat Admin Dasar membantu Anda melindungi dan memperkuat grup Anda."
              "\n• Anda dapat mencekal anggota, Menendang anggota, Mempromosikan seseorang sebagai admin melalui perintah bot."
-             "\n\n*Selamat Datang*"
+             "\n\n*Selamat datang*"
              "\n• Mari kita atur pesan selamat datang untuk menyambut pengguna baru yang datang ke grup Anda."
              "\n• Kirim ``/setwelcome`` [pesan] untuk menyetel pesan selamat datang pada group!"
              "\n• Kirim ``/welcome`` [off/on] untuk mematikan pesan selamat datang pada bot di group.",
