@@ -101,7 +101,7 @@ buttons = [
             text="✚ Add Bot To Your Group ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="👨‍💻 Owner Bot 👨‍💻", url="https://t.me/?user_id=2056203142"),
+        InlineKeyboardButton(text="👨‍💻 Owner Bot 👨‍💻", url="tg://openmessage?user_id=2056203142"),
         InlineKeyboardButton(text=f"📥 About Info 📥", callback_data="emiko_"),
     ],
     [
