@@ -5,12 +5,24 @@ from EmikoRobot import telethn as tbot
 
 @register(pattern="^/ptl ?(.*)")
 async def asupan(event):
+    memeks = await event.reply("**Search Video Asupan...🔍**") 
     try:
-        resp = requests.get("https://api-tede.herokuapp.com/api/asupan/ptl").json()
-        asupannya = f"{resp['url']}"
-        return await tbot.send_file(event.chat_id, asupannya)
+        asupannya = [
+            asupan
+            async for asupan in ubot2.iter_messages(
+            "@Database_TonicUbot", filter=InputMessagesFilterVideo
+            )
+        ]
+        kontols = random.choice(asupannya)
+        pantek = await ubot2.download_media(kontols)
+        await tbot.send_file(
+            event.chat.id, 
+            caption="Nah kak asupan 🥵", 
+            file=pantek
+        )
+        await memeks.delete()
     except Exception:
-        await event.reply("`Error 404 not found...`")
+        await memeks.edit("Video tidak di temukan")
 
 
 @register(pattern="^/chika ?(.*)")
@@ -54,11 +66,11 @@ async def boobs(client, message):
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
         os.makedirs(TEMP_DOWNLOAD_DIRECTORY)
     pic_loc = os.path.join(TEMP_DOWNLOAD_DIRECTORY, "bobs.jpg")
-    a = await message.reply_text("**Mencari Gambar Bugil**")
+    a = await message.reply_text("**Mencari Gambar**")
     await asyncio.sleep(0.5)
-    await a.edit("`Mengirim foto bugil...`")
+    await a.edit("`Mengirim foto...`")
     nsfw = requests.get("http://api.oboobs.ru/noise/1").json()[0]["preview"]
     urllib.request.urlretrieve("http://media.oboobs.ru/{}".format(nsfw), pic_loc)
-    await client.send_photo(message.chat.id, pic_loc, caption="**Sange boleh, Goblok jangan**")
+    await client.send_photo(message.chat.id, pic_loc, caption="**Sange boleh, Goblok jangan _-**")
     os.remove(pic_loc)
     await a.delete()
