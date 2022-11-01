@@ -101,7 +101,7 @@ buttons = [
             text="✚ Add Bot To Your Group ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="👨‍💻 Owner Bot 👨‍💻", url="t.me/xdazher"),
+        InlineKeyboardButton(text="👨‍💻 Owner Bot 👨‍💻", url="tg://openmessage?user_id=2056203142"),
         InlineKeyboardButton(text=f"📥 About Info 📥", callback_data="emiko_"),
     ],
     [
@@ -121,7 +121,7 @@ HELP_STRINGS = f"""
   ‣ ɪᴛ's ᴡᴏʀᴋ : ᴊɪᴋᴀ ʙᴏᴛ sᴜᴅᴀʜ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ & ᴅᴀᴘᴇᴛ ᴀᴋsᴇs."""
 
 DONATE_STRING = """Info ehhh.. !!
-untuk kamu,kamu dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](https://t.me/xdazher) \
+untuk kamu,kamu dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](tg://openmessage?user_id=2056203142) \
 Mereka yang tidak dapat memberikan dukungan dan Bantuan, dipersilakan untuk membantu kami mengembangkan bot ini dengan cara Berdonasi Seikhlasnya."""
 
 IMPORTED = {}
@@ -376,7 +376,7 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
-                    InlineKeyboardButton(text="Owner Bot", url="t.me/xdazher"),
+                    InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=2056203142"),
                  ],
                  [
                     InlineKeyboardButton(text="Admin Info", callback_data="emiko_admin"),
