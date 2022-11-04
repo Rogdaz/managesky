@@ -101,13 +101,13 @@ buttons = [
             text="✚ Add Bot To Your Group ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="👨‍💻 Owner Bot 👨‍💻", url="tg://openmessage?user_id=2056203142"),
-        InlineKeyboardButton(text=f"📥 About Info 📥", callback_data="emiko_"),
+        InlineKeyboardButton(text="👨‍💻 Owner Bot", url="tg://openmessage?user_id=2056203142"),
+        InlineKeyboardButton(text=f"📥 About Info", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="⚙️ Cmd Help ⚙️", callback_data="help_back"),
+        InlineKeyboardButton(text="⚙️ Cmd Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="💿 Cmd Musik 💿", callback_data="source_"),
+            text="💿 Cmd Musik", callback_data="source_"),
 
     ],
 ]
@@ -379,7 +379,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=2056203142"),
                  ],
                  [
-                    InlineKeyboardButton(text="Admin Info", callback_data="emiko_admin"),
+                    InlineKeyboardButton(text="Forward Bot", url="http://t.me/cloner_xbot"),
                     InlineKeyboardButton(text="Support Info", callback_data="emiko_support"),
                  ],
                  [
