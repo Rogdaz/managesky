@@ -58,4 +58,4 @@ __mod_name__ = "writetool"
 
 __help__ = """
  Writes the given text on white page with a pen 🖊
-❍ /write <text> *:* Writes the give
+❍ /write <text> *:* Writes the give"""
