@@ -92,7 +92,7 @@ PM_START_TEXT = """
 ➻ {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*
 ────────────────────"
 ◕ *klik help & cmd untuk melihat commands.*
-◕ *Pᴏᴡᴇʀᴇᴅ* [☕](https://telegra.ph/file/1afa11b71228ef67aefc5.jpg) *Bʏ: @about_db!*
+◕ *Pᴏᴡᴇʀᴇᴅ* [☕](https://telegra.ph/file/1afa11b71228ef67aefc5.jpg) *Bʏ: @slidBarbar!*
 """
 
 buttons = [
@@ -101,7 +101,7 @@ buttons = [
             text="✚ Add Bot To Your Group ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="👨‍💻 Owner Bot", url="tg://openmessage?user_id=2056203142"),
+        InlineKeyboardButton(text="👨‍💻 Owner Bot", url="tg://openmessage?user_id=2020703713"),
         InlineKeyboardButton(text=f"📥 About Info", callback_data="emiko_"),
     ],
     [
@@ -121,7 +121,7 @@ HELP_STRINGS = f"""
   ‣ ɪᴛ's ᴡᴏʀᴋ : ᴊɪᴋᴀ ʙᴏᴛ sᴜᴅᴀʜ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ & ᴅᴀᴘᴇᴛ ᴀᴋsᴇs."""
 
 DONATE_STRING = """Info ehhh.. !!
-untuk kamu,kamu dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](tg://openmessage?user_id=2056203142) \
+untuk kamu,kamu dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](tg://openmessage?user_id=2020703713) \
 Mereka yang tidak dapat memberikan dukungan dan Bantuan, dipersilakan untuk membantu kami mengembangkan bot ini dengan cara Berdonasi Seikhlasnya."""
 
 IMPORTED = {}
@@ -376,7 +376,7 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
-                    InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=2056203142"),
+                    InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=2020703713"),
                  ],
                  [
                     InlineKeyboardButton(text="Forward Bot", url="http://t.me/cloner_xbot"),
@@ -426,8 +426,8 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                [
                  [
-                    InlineKeyboardButton(text="Support Group", url="https://t.me/+wmUxlcgtFOljY2I9"),
-                    InlineKeyboardButton(text="Support Updates", url="https://t.me/about_db"),
+                    InlineKeyboardButton(text="Support Group", url="https://t.me/+YmorvCCsNm9jYzI1"),
+                    InlineKeyboardButton(text="Support Channel", url="https://t.me/slidBarbar"),
                  ],
                  [
                     InlineKeyboardButton(text="◁ Back", callback_data="emiko_"),
@@ -453,13 +453,13 @@ def Source_about_callback(update, context):
             "\n\n✗ *Command for all members.*"
             "\n • `/play` - play musik via search youtube."
             "\n • `/playlist` - untuk melihat daftar antrean" 
-            "\n\n✗ *Pᴏᴡᴇʀᴇᴅ ☕ By : @about_db!*",
+            "\n\n✗ *Pᴏᴡᴇʀᴇᴅ ☕ By : @slidBarbar!*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdbmusicbot"),
+                     InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdsolidbot"),
                      InlineKeyboardButton(text="◁ Back", callback_data="source_back"),
                  ]
                 ]
