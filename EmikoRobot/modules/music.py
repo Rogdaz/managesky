@@ -242,3 +242,10 @@ async def lyrics_func(_, message):
         return await m.edit(f"**__{lyrics}__**")
     lyrics = await paste(lyrics)
     await m.edit(f"**LYRICS_TOO_LONG:** [URL]({lyrics})")
+
+__mod_name__ = "Music"
+
+__help__ = """
+ ❍ /song <song name>*:* Uploads the song in it's best quality available
+ 💡Ex: `/song <Faded Alan Walker // Link Youtube>
+"""
