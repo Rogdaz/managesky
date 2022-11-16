@@ -1,4 +1,4 @@
-__mod_name__ = "Bug"
+__mod_name__ = "Bug Report"
 
 __help__ = """
 *Reporting bug stream bot*
