@@ -563,14 +563,15 @@ A button can be added to a note by using standard markdown link syntax - the lin
  *Example:*
  `/save notename
  Reply 1
- %%%
+ %%
  Reply 2
  %%%
  Reply 3`
 ❂ /clear <notename>*:* clear note with this name
 ❂ /removeallnotes*:* removes all notes from the group
 
- *Note:* Note names are case-insensitive, and they are automatically converted to lowercase before getting saved.
+ *Note:* Nama catatan tidak peka huruf besar-kecil, dan secara otomatis diubah menjadi huruf kecil sebelum disimpan
+         Dan juga usahakan Menggunakan text yang baru di forward atau baru di kirim, agar bot bisa mengsave teksnya.
 """
 
 __mod_name__ = "Notes"
