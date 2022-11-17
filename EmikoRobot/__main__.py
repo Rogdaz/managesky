@@ -92,7 +92,7 @@ PM_START_TEXT = """
 ➻ {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*
 ────────────────────"
 ◕ *klik help & cmd untuk melihat commands.*
-◕ *Pᴏᴡᴇʀᴇᴅ* ☕ *Bʏ: @slidBarbar!*
+◕ *Pᴏᴡᴇʀᴇᴅ* ☕ *Bʏ: @about_db!*
 """
 
 buttons = [
