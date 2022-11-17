@@ -17,9 +17,8 @@ async def handwrite(_, message: Message):
         req = requests.get(API).url
         caption = f"""
 Successfully Written Text 💘
-✨ **Written By :** [{BOT_NAME}](https://t.me/{bu})
+✨ **Written By :** {dispatcher.bot.first_name}
 🥀 **Requested by :** {message.from_user.mention}
-❄ **Link :** `{req}`
 """
         await m.delete()
         await emiko.send_photo(
@@ -27,7 +26,7 @@ Successfully Written Text 💘
             photo=req,
             caption=caption,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("Telegraph", url=f"{req}")]]
+                [[InlineKeyboardButton("ᴛᴇʟᴇɢʀᴀᴩʜ", url=f"{req}")]]
             ),
         )
     else:
@@ -39,9 +38,8 @@ Successfully Written Text 💘
         req = requests.get(API).url
         caption = f"""
 Successfully Written Text 💘
-✨ **Written By :** [{BOT_NAME}](https://t.me/{bu})
+✨ **Written By :** {dispatcher.bot.first_name}
 🥀 **Requested by :** {message.from_user.mention}
-❄ **Link :** `{req}`
 """
         await m.delete()
         await emiko.send_photo(
@@ -49,7 +47,7 @@ Successfully Written Text 💘
             photo=req,
             caption=caption,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("• ᴛᴇʟᴇɢʀᴀᴩʜ •", url=f"{req}")]]
+                [[InlineKeyboardButton("ᴛᴇʟᴇɢʀᴀᴩʜ", url=f"{req}")]]
             ),
         )
 
