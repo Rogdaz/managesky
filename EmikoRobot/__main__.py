@@ -452,7 +452,7 @@ def Source_about_callback(update, context):
             "\n\n✗ *Command for all members.*"
             "\n • `/play` - play musik via search youtube."
             "\n • `/playlist` - untuk melihat daftar antrean" 
-            "\n\n✗ *Pᴏᴡᴇʀᴇᴅ ☕ By : @slidBarbar!*",
+            "\n\n✗ *Pᴏᴡᴇʀᴇᴅ ☕ By : @about_db!*",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
