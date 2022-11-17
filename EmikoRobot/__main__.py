@@ -101,7 +101,7 @@ buttons = [
             text="✚ Add Bot To Your Group ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="👨‍💻 Owner Bot", url="tg://openmessage?user_id=2020703713"),
+        InlineKeyboardButton(text="👨‍💻 Owner Bot", url="tg://openmessage?user_id=5658910455"),
         InlineKeyboardButton(text=f"📥 About Info", callback_data="emiko_"),
     ],
     [
@@ -116,12 +116,11 @@ buttons = [
 HELP_STRINGS = f"""
 *» {dispatcher.bot.first_name} ᴇxᴄʟᴜsɪᴠᴇ ꜰᴇᴀᴛᴜʀᴇs*
 ➲ /start : Start bot dan bot siap di jalankan.
-➲ /donate : Support saya agar lebih semangat.
 ➲ /help  : Cmd Untuk melihat Informasi bot .
   ‣ ɪᴛ's ᴡᴏʀᴋ : ᴊɪᴋᴀ ʙᴏᴛ sᴜᴅᴀʜ ᴍᴇɴᴊᴀᴅɪ ᴀᴅᴍɪɴ & ᴅᴀᴘᴇᴛ ᴀᴋsᴇs."""
 
 DONATE_STRING = """Info ehhh.. !!
-untuk kamu,kamu dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](tg://openmessage?user_id=2020703713) \
+untuk kamu,kamu dapat mendukung proyek/Robot ini dengan menghubungi [𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥](tg://openmessage?user_id=2056203142) \
 Mereka yang tidak dapat memberikan dukungan dan Bantuan, dipersilakan untuk membantu kami mengembangkan bot ini dengan cara Berdonasi Seikhlasnya."""
 
 IMPORTED = {}
@@ -205,7 +204,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="◀️ Back", callback_data="help_back")]]
                     ),
                 )
 
@@ -318,7 +317,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="◀️ Back", callback_data="help_back")]]
                 ),
             )
 
@@ -376,14 +375,14 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
-                    InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=2020703713"),
+                    InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=5658910455"),
                  ],
                  [
                     InlineKeyboardButton(text="Forward Bot", url="http://t.me/cloner_xbot"),
                     InlineKeyboardButton(text="Support Info", callback_data="emiko_support"),
                  ],
                  [
-                    InlineKeyboardButton(text="◁ Back", callback_data="source_back"),
+                    InlineKeyboardButton(text="◀️ Back", callback_data="source_back"),
                  ]
                 ]
             ),
@@ -403,7 +402,7 @@ def emiko_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◁ Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="◀️ Back", callback_data="emiko_")]]
             ),
         )
 
@@ -415,7 +414,7 @@ def emiko_about_callback(update, context):
              f"\n• Anda juga dapat mengatur tombol untuk catatan dan filter (lihat menu bantuan)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="◁ Back", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="◀️ Back", callback_data="emiko_")]]
             ),
         )
     elif query.data == "emiko_support":
@@ -426,11 +425,11 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                [
                  [
-                    InlineKeyboardButton(text="Support Group", url="https://t.me/+YmorvCCsNm9jYzI1"),
-                    InlineKeyboardButton(text="Support Channel", url="https://t.me/slidBarbar"),
+                    InlineKeyboardButton(text="Support Group", url="https://t.me/Awas_Tegangan"),
+                    InlineKeyboardButton(text="Support Channel", url="https://t.me/gbtnyaOtan"),
                  ],
                  [
-                    InlineKeyboardButton(text="◁ Back", callback_data="emiko_"),
+                    InlineKeyboardButton(text="◀️ Back", callback_data="emiko_"),
                  
                  ]
                 ]
@@ -459,8 +458,8 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdsolidbot"),
-                     InlineKeyboardButton(text="◁ Back", callback_data="source_back"),
+                     InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdmusik_bot"),
+                     InlineKeyboardButton(text="◀️ Back", callback_data="source_back"),
                  ]
                 ]
            ),
@@ -518,7 +517,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Go Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="◀️ Back", callback_data="help_back")]]
             ),
         )
 
@@ -590,7 +589,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Go Back",
+                                text="◀️  Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
