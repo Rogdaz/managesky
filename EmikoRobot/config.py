@@ -18,7 +18,7 @@ class Config(object):
     OWNER_ID = 1606221784  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OPENWEATHERMAP_ID = 22322
     OWNER_USERNAME = "xdazher"
-    BOT_USERNAME = "EmiexRobot"
+    BOT_USERNAME = ""
     SUPPORT_CHAT = "xdgroupbot"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001748076180
