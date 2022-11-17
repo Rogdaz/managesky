@@ -101,13 +101,13 @@ buttons = [
             text="✚ Add Bot To Your Group ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="👨‍💻 Owner Bot", url="tg://openmessage?user_id=5658910455"),
-        InlineKeyboardButton(text=f"📥 About Info", callback_data="emiko_"),
+        InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=876054262"),
+        InlineKeyboardButton(text=f"About Info", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="⚙️ Cmd Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Cmd Help", callback_data="help_back"),
         InlineKeyboardButton(
-            text="💿 Cmd Musik", callback_data="source_"),
+            text="Cmd Musik", callback_data="source_"),
 
     ],
 ]
@@ -375,7 +375,7 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
-                    InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=5658910455"),
+                    InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=876054262"),
                  ],
                  [
                     InlineKeyboardButton(text="Forward Bot", url="http://t.me/cloner_xbot"),
@@ -425,8 +425,8 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                [
                  [
-                    InlineKeyboardButton(text="Support Group", url="https://t.me/Awas_Tegangan"),
-                    InlineKeyboardButton(text="Support Channel", url="https://t.me/gbtnyaOtan"),
+                    InlineKeyboardButton(text="Support Group", url="https://t.me/havingsexid"),
+                    InlineKeyboardButton(text="Support Channel", url="https://t.me/skymusicku"),
                  ],
                  [
                     InlineKeyboardButton(text="◀️ Back", callback_data="emiko_"),
@@ -458,7 +458,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                     InlineKeyboardButton(text="🗒 Cmd For Music", url=f"https://t.me/{bu}?start=help_xdmusik_bot"),
+                     InlineKeyboardButton(text="Cmd For Music", url=f"https://t.me/{bu}?start=help_pecandu_suarabot"),
                      InlineKeyboardButton(text="◀️ Back", callback_data="source_back"),
                  ]
                 ]
