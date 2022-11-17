@@ -248,6 +248,6 @@ __mod_name__ = "Music"
 __help__ = """
  ❍ /song <song name>*:* Uploads the song in it's best quality available
  💡Ex: `/song <Faded Alan Walker // Link Youtube>`
- ❍ /lyric <song name>*:* Uploads the lyric 
- 💡Ex: `/lyric <febyy liar angin>`
+ ❍ /lyrics <song name>*:* Uploads the lyric 
+ 💡Ex: `/lyrics <febyy liar angin>`
 """
