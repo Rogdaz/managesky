@@ -101,7 +101,7 @@ buttons = [
             text="✚ Add Bot To Your Group ✚", url=f"https://t.me/{bu}?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=876054262"),
+        InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=5725400316"),
         InlineKeyboardButton(text=f"About Info", callback_data="emiko_"),
     ],
     [
@@ -375,7 +375,7 @@ def emiko_about_callback(update, context):
                 [
                  [
                     InlineKeyboardButton(text="Notes", callback_data="emiko_notes"),
-                    InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=876054262"),
+                    InlineKeyboardButton(text="Owner Bot", url="tg://openmessage?user_id=5725400316"),
                  ],
                  [
                     InlineKeyboardButton(text="Forward Bot", url="http://t.me/cloner_xbot"),
@@ -425,8 +425,8 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                [
                  [
-                    InlineKeyboardButton(text="Support Group", url="https://t.me/havingsexid"),
-                    InlineKeyboardButton(text="Support Channel", url="https://t.me/skymusicku"),
+                    InlineKeyboardButton(text="Support Channel2", url="https://t.me/about_db"),
+                    InlineKeyboardButton(text="Support Channel1", url="https://t.me/sodasexgang1"),
                  ],
                  [
                     InlineKeyboardButton(text="◀️ Back", callback_data="emiko_"),
